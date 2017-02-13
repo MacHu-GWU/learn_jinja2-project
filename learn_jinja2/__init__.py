@@ -11,3 +11,10 @@ jinja2是Python社区的一个文本模板引擎, 功能非常强大。
 __version__ = "0.0.1"
 __short_description__ = "Learn jinja2."
 __license__ = "MIT"
+
+try:
+    from .pkg.decorator import run_if_is_main
+    from .p01_manage_template import env
+except:
+    from learn_jinja2.pkg.decorator import run_if_is_main
+    from learn_jinja2.p01_manage_template import env
